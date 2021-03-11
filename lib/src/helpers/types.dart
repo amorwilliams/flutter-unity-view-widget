@@ -6,7 +6,12 @@ class SceneLoaded {
   final bool isLoaded;
   final bool isValid;
 
-  SceneLoaded({this.name, this.buildIndex, this.isLoaded, this.isValid});
+  SceneLoaded({
+    required this.name,
+    required this.buildIndex,
+    required this.isLoaded,
+    required this.isValid,
+  });
 
   /// Mainly for internal use when calling [CameraUpdate.newCameraPosition].
   dynamic toMap() => <String, dynamic>{
@@ -19,7 +24,7 @@ class SceneLoaded {
   /// Deserializes [SceneLoaded] from a map.
   ///
   /// Mainly for internal use.
-  static SceneLoaded fromMap(dynamic json) {
+  static SceneLoaded? fromMap(dynamic json) {
     if (json == null) {
       return null;
     }
