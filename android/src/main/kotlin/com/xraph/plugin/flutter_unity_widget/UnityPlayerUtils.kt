@@ -62,11 +62,11 @@ class UnityPlayerUtils {
 
                         // restore window layout
                         if (!options.fullscreenEnabled) {
-                            activity.window.addFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN)
-                            activity.window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
-                            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-                                activity.window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-                            }
+                            // activity.window.addFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN)
+                            // activity.window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+                            // if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+                            //     activity.window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                            // }
                         }
                     }
 
